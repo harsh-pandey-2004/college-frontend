@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { requestOTP, verifyOTP } from "../network/auth"; 
+import { requestOTP, verifyOTP } from "../network/auth";
 
 const LoginForm = () => {
   const [phone, setPhone] = useState("");
@@ -8,7 +8,7 @@ const LoginForm = () => {
   const [otpSent, setOtpSent] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleSendOTP = async () => {
@@ -24,13 +24,13 @@ const LoginForm = () => {
     }
 
     try {
-      setError(null); 
-      setSuccess(null); 
-      setLoading(true); 
+      setError(null);
+      setSuccess(null);
+      setLoading(true);
       await requestOTP(phone);
-      setOtpSent(true); 
+      setOtpSent(true);
       setSuccess("OTP sent successfully!");
-      setLoading(false); 
+      setLoading(false);
     } catch (error) {
       setLoading(false);
       setError("Failed to send OTP. Try again.");
@@ -44,15 +44,18 @@ const LoginForm = () => {
     }
 
     try {
-      setError(null); 
+      setError(null);
       setSuccess(null);
-      setLoading(true); 
-      
+      setLoading(true);
+
       let a = await verifyOTP(phone, otp);
       localStorage.setItem("token-user", a.token);
       setSuccess("OTP Verified! Logging you in...");
-      setTimeout(() => navigate("/"), 2000); 
-      setLoading(false); 
+      setTimeout(() => {
+        navigate("/");
+        window.location.reload();
+      }, 2000);
+      setLoading(false);
     } catch (error) {
       setLoading(false);
       setError("Invalid OTP. Please try again.");
