@@ -182,6 +182,7 @@ const CollegeProcess = () => {
                     </h3>
                     <p className="text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
                       {feature.description}
+                      
                     </p>
                   </div>
                 </div>
