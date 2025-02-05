@@ -41,7 +41,7 @@ const Skilline = () => {
     <div className="bg-gradient-to-b from-gray-50 to-white">
       <section
         data-section="intro"
-        className={`px-4 py-12 md:py-16 max-w-7xl mx-auto transform transition-all duration-1000 hidden md:block${
+        className={`px-4 py-12 md:py-16 max-w-7xl mx-auto transform transition-all duration-1000 hidden md:block ${
           isVisible.intro
             ? "translate-y-0 opacity-100"
             : "translate-y-10 opacity-0"
@@ -141,7 +141,7 @@ const Skilline = () => {
 
       <section
         data-section="features"
-        className={`px-4 py-16 md:py-24 max-w-7xl mx-auto transform transition-all duration-1000 ${
+        className={`px-4 py-16 md:py-24 max-w-7xl mx-auto transform transition-all duration-1000 hidden md:block${
           isVisible.features
             ? "translate-y-0 opacity-100"
             : "translate-y-10 opacity-0"
