@@ -79,7 +79,7 @@ const CollegeProcess = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-50">
       <div className="text-center mb-16">
-        <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
+        <h1 className="text-6xl font-bold text-blue-600 mb-6">
           Your College Journey Starts Here
         </h1>
         <p className="text-2xl text-gray-600 max-w-2xl mx-auto">
@@ -157,7 +157,7 @@ const CollegeProcess = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-        <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl transition-all duration-300 font-bold hover:shadow-xl hover:-translate-y-1 transform">
+        <button className="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-xl transition-all duration-300 font-bold hover:shadow-xl hover:-translate-y-1 transform">
           Start Your Journey Now
         </button>
         <button className="w-full sm:w-auto border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl hover:bg-blue-50 transition-all duration-300 font-bold hover:shadow-xl hover:-translate-y-1 transform">

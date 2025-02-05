@@ -8,24 +8,15 @@ export default {
         roboto: ["Roboto", "sans-serif"],
       },
       colors: {
-        // Background Colors
-        'bg-light': '#f4f4f4', // Light Grey Background
-
-        // Primary and Secondary Colors
-        'vibrant-blue': '#007BFF', // Blue for links, buttons, etc.
-        'vibrant-teal': '#008080', // Teal (Alternative Primary)
-
-        // Text Colors
-        'text-dark': '#333333', // Dark Charcoal for body text
-        'text-secondary': '#888888', // Light Grey for secondary text
-
-        // Accent Colors
-        'coral': '#FF6F61', // Coral for accent buttons/icons
-        'orange': '#FFA500', // Orange for accents
-
-        // Link Colors
-        'link-default': '#007BFF', // Default blue link color
-        'link-hover': '#0056b3', // Hover color for links (darker blue)
+        'bg-light': '#f4f4f4', 
+        'vibrant-blue': '#007BFF',
+        'vibrant-teal': '#008080',
+        'text-dark': '#333333',
+        'text-secondary': '#888888',
+        'coral': '#FF6F61',
+        'orange': '#FFA500',
+        'link-default': '#007BFF',
+        'link-hover': '#0056b3',
       },
     },
   }

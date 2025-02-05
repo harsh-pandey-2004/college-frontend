@@ -39,7 +39,6 @@ const Skilline = () => {
 
   return (
     <div className="bg-gradient-to-b from-gray-50 to-white">
-      {/* Intro Section */}
       <section
         data-section="intro"
         className={`px-4 py-12 md:py-16 max-w-7xl mx-auto transform transition-all duration-1000 ${
@@ -101,7 +100,6 @@ const Skilline = () => {
         </div>
       </section>
 
-      {/* Everything Section */}
       <section
         data-section="everything"
         className={`px-4 py-16 md:py-24 max-w-7xl mx-auto transform transition-all duration-1000 ${
@@ -141,7 +139,6 @@ const Skilline = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       <section
         data-section="features"
         className={`px-4 py-16 md:py-24 max-w-7xl mx-auto transform transition-all duration-1000 ${
@@ -230,7 +227,6 @@ const Skilline = () => {
         </div>
       </section>
 
-      {/* Community Section */}
       <section
         data-section="community"
         className={`px-4 py-16 md:py-24 max-w-7xl mx-auto transform transition-all duration-1000 ${
@@ -271,7 +267,6 @@ const Skilline = () => {
                   <span className="text-gray-700">Study Groups</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-shadow">
-                  {/* <Motion className="w-5 h-5 text-green-500" /> */}
                   <span className="text-gray-700">Events</span>
                 </div>
               </div>

@@ -68,7 +68,6 @@ const LoginForm = () => {
         </p>
       </div>
 
-      {/* Right Section - Login Form */}
       <div className="md:w-1/2 flex items-center justify-center w-full">
         <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
           <h2 className="text-2xl font-bold mb-6 text-center">
@@ -79,7 +78,6 @@ const LoginForm = () => {
           {success && <p className="text-green-500 text-center">{success}</p>}
 
           <div className="space-y-4">
-            {/* Phone Number Input */}
             <div className="flex space-x-2">
               <select className="border border-gray-300 rounded-md px-3 py-2">
                 <option value="+91">+91</option>

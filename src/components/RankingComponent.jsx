@@ -111,9 +111,7 @@ const CollegeRanking = () => {
           </div>
 
           <div className="p-8 bg-white space-y-8">
-            {/* Search and Filters */}
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-              {/* Search Input */}
               <div className="relative group">
                 <input
                   type="text"
@@ -178,7 +176,6 @@ const CollegeRanking = () => {
               />
             </div>
 
-            {/* College Table */}
             <div className="overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
               <table className="w-full">
                 <thead>
@@ -254,7 +251,6 @@ const CollegeRanking = () => {
               </table>
             </div>
 
-            {/* Pagination */}
             {totalPages > 1 && (
               <div className="flex justify-between items-center pt-4">
                 <button

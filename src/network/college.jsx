@@ -15,7 +15,7 @@ export const fetchCollegesByquery = async (value) => {
     throw error;
   }
 };
-export const fetchCollegesFilter = async (value) => {
+export const fetchCollegesFilter = async () => {
   try {
     const response = await axios.get(
       `${BASE_URL}/api/courses`

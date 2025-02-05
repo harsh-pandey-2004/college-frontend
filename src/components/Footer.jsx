@@ -4,19 +4,16 @@ import { Mail, MapPin, Phone, Calendar, User, Facebook, Twitter, Instagram, Hear
 const Footer = () => {
   const blog = [
     {
-      cover: "/api/placeholder/80/80",
       date: "Jan 1, 2024",
       type: "Admin",
       title: "The Future of Online Education",
     },
     {
-      cover: "/api/placeholder/80/80",
       date: "Feb 15, 2024",
       type: "Guest Author",
       title: "Top 10 Learning Trends in 2024",
     },
     {
-      cover: "/api/placeholder/80/80",
       date: "March 10, 2024",
       type: "Editor",
       title: "How to Stay Motivated in Online Courses",
@@ -116,11 +113,7 @@ const Footer = () => {
                   href="#"
                   className="group flex items-start space-x-4 hover:bg-white p-2 rounded-lg transition-all duration-300"
                 >
-                  <img
-                    src={post.cover}
-                    alt={post.title}
-                    className="w-16 h-16 rounded-lg object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  
                   <div className="space-y-2">
                     <div className="flex items-center gap-4 text-sm text-gray-500">
                       <span className="flex items-center gap-1">

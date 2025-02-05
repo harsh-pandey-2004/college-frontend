@@ -42,7 +42,7 @@ const AnimatedText = () => {
   return (
     <div className="h-24 md:h-28 flex items-center justify-center overflow-hidden">
       <div
-        className={`transform transition-all duration-500 ease-out text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 text-5xl md:text-6xl font-bold
+        className={`transform transition-all duration-500 ease-out text-transparent bg-clip-text bg-blue-600 text-5xl md:text-6xl font-bold
           ${
             isVisible
               ? "translate-y-0 opacity-100 scale-100"
@@ -61,7 +61,7 @@ const NavLink = ({ to, children }) => (
     className="group relative overflow-hidden px-4 py-2 hover:text-blue-300 transition-all duration-300"
   >
     <span className="relative z-10">{children}</span>
-    <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+    <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-blue-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
     <div className="absolute inset-0 bg-white/5 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300" />
   </Link>
 );
@@ -212,7 +212,7 @@ const HeroSection = () => {
           <div className="hidden md:flex items-center space-x-6">
             <Link
               to="/new"
-              className="relative group px-6 py-2 overflow-hidden rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
+              className="relative group px-6 py-2 overflow-hidden rounded-full bg-blue-600"
             >
               <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
               <span className="relative font-semibold">NEW</span>
@@ -265,7 +265,7 @@ const HeroSection = () => {
                   onBlur={() => setIsSearchFocused(false)}
                 />
               </div>
-              <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-5 rounded-r-full font-semibold hover:from-blue-600 hover:to-purple-600 transform hover:scale-105 transition-all duration-300">
+              <button className="bg-blue-600 text-white px-8 py-5 rounded-r-full font-semibold hover:from-blue-600 hover:to-purple-600 transform hover:scale-105 transition-all duration-300">
                 Search
               </button>
             </div>

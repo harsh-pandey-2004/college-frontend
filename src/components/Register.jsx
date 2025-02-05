@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { registerUser } from "../network/auth"; // Importing API function
+import { registerUser } from "../network/auth";
 
 const RegistrationForm = () => {
   const [name, setName] = useState("");
@@ -16,8 +16,7 @@ const RegistrationForm = () => {
 
   const handleRegistration = async () => {
     try {
-      const response = await registerUser(name, email, phone, stream, level, password);
-      
+      await registerUser(name, email, phone, stream, level, password);
       setSuccess("Registration Successful! Redirecting...");
       setTimeout(() => navigate("/login"), 2000);
     } catch (error) {
@@ -35,7 +34,6 @@ const RegistrationForm = () => {
         </p>
       </div>
 
-      {/* Right Section - Form */}
       <div className="w-full md:w-1/2 flex items-center justify-center ">
         <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
           <h2 className="text-2xl font-bold mb-6 text-center">
