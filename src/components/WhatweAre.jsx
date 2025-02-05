@@ -104,14 +104,14 @@ const Skilline = () => {
         data-section="everything"
         className={`px-4 py-16 md:py-24 max-w-7xl mx-auto transform transition-all duration-1000 ${
           isVisible.everything
-            ? "translate-x-0 opacity-100"
-            : "translate-x-10 opacity-0"
+            ? "translate-x-0 opacity-100 md:block hidden"
+            : "translate-x-10 opacity-0 md:block hidden"
         }`}
       >
         <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-12">
           <div className="w-full md:w-2/5">
             <div className="relative">
-              <div className="w-12 h-12 bg-orange-500 rounded-full absolute -top-6 -left-6 animate-pulse"></div>
+              <div className="w-12 h-12 bg-orange-500 rounded-full absolute -top-6 -left-6 animate-pulse md:block hidden"></div>
               <h4 className="text-3xl md:text-4xl font-bold text-blue-900 leading-tight">
                 Everything you get in a physical college,{" "}
                 <span className="text-orange-500">you get here</span>
@@ -123,13 +123,13 @@ const Skilline = () => {
               </p>
               <button className="mt-8 group flex items-center text-blue-600 hover:text-blue-800 transition-colors">
                 <span>Learn More</span>
-                <ChevronRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                <ChevronRight className="ml-2 transform group-hover:translate-x-1 transition-transform md:block hidden" />
               </button>
             </div>
           </div>
           <div className="relative w-full md:w-1/2">
-            <div className="w-32 h-32 bg-blue-400 rounded-full absolute -top-8 -left-8 animate-pulse opacity-25"></div>
-            <div className="w-40 h-40 bg-orange-500 rounded-full absolute -bottom-8 -right-8 animate-pulse opacity-25"></div>
+            <div className="w-32 h-32 bg-blue-400 rounded-full absolute -top-8 -left-8 animate-pulse opacity-25 md:block hidden"></div>
+            <div className="w-40 h-40 bg-orange-500 rounded-full absolute -bottom-8 -right-8 animate-pulse opacity-25 md:block hidden"></div>
             <img
               src={imgage2}
               alt="Lecture Hall"
@@ -154,8 +154,8 @@ const Skilline = () => {
               alt="Virtual Class"
               className="rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-105"
             />
-            <div className="w-40 h-40 bg-green-400 rounded-full absolute -top-8 left-8 animate-pulse opacity-25"></div>
-            <div className="w-40 h-40 bg-blue-500 rounded-full absolute -bottom-8 right-16 animate-pulse opacity-25"></div>
+            <div className="w-40 h-40 bg-green-400 rounded-full absolute -top-8 left-8 animate-pulse opacity-25 md:block hidden"></div>
+            <div className="w-40 h-40 bg-blue-500 rounded-full absolute -bottom-8 right-16 animate-pulse opacity-25 md:block hidden"></div>
           </div>
           <div className="w-full md:w-1/2">
             <h4 className="text-3xl md:text-4xl font-bold text-blue-900 leading-tight">
@@ -200,7 +200,7 @@ const Skilline = () => {
         <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-12">
           <div className="w-full md:w-1/2">
             <div className="relative">
-              <div className="w-12 h-12 bg-orange-500 rounded-full absolute -top-6 -left-6 animate-pulse"></div>
+              <div className="w-12 h-12 bg-orange-500 rounded-full absolute -top-6 -left-6 animate-pulse md:block hidden"></div>
               <h4 className="text-3xl md:text-4xl font-bold text-blue-900 leading-tight">
                 <span className="text-orange-500">Enroll</span> in Your Dream
                 Program
@@ -216,8 +216,8 @@ const Skilline = () => {
             </div>
           </div>
           <div className="relative w-full md:w-1/2">
-            <div className="w-32 h-32 bg-blue-400 rounded-full absolute -top-8 -left-8 animate-pulse opacity-25"></div>
-            <div className="w-40 h-40 bg-orange-500 rounded-full absolute -bottom-8 -right-8 animate-pulse opacity-25"></div>
+            <div className="w-32 h-32 bg-blue-400 rounded-full absolute -top-8 -left-8 animate-pulse opacity-25 md:block hidden"></div>
+            <div className="w-40 h-40 bg-orange-500 rounded-full absolute -bottom-8 -right-8 animate-pulse opacity-25 md:block hidden"></div>
             <img
               src={imgage5}
               alt="Enrollment"
@@ -237,8 +237,8 @@ const Skilline = () => {
       >
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="relative w-full md:w-1/2">
-            <div className="w-32 h-32 bg-purple-400 rounded-full absolute -top-8 -left-8 animate-pulse opacity-25"></div>
-            <div className="w-40 h-40 bg-green-500 rounded-full absolute -bottom-8 -right-8 animate-pulse opacity-25"></div>
+            <div className="w-32 h-32 bg-purple-400 rounded-full absolute -top-8 -left-8 animate-pulse opacity-25  sm:block"></div>
+            <div className="w-40 h-40 bg-green-500 rounded-full absolute -bottom-8 -right-8 animate-pulse opacity-25 hidden sm:block"></div>
             <img
               src={imgage4}
               alt="Community"
@@ -247,7 +247,7 @@ const Skilline = () => {
           </div>
           <div className="w-full md:w-1/2">
             <div className="relative">
-              <div className="w-12 h-12 bg-blue-500 rounded-full absolute -top-6 -left-6 animate-pulse"></div>
+              <div className="w-12 h-12 bg-blue-500 rounded-full absolute -top-6 -left-6 animate-pulse hidden sm:block"></div>
               <h4 className="text-3xl md:text-4xl font-bold text-blue-900 leading-tight">
                 Join a{" "}
                 <span className="text-orange-500">Vibrant Community</span>
